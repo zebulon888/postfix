@@ -17,6 +17,8 @@ RUN	zypper -n up \
 # RUN 	groupadd -g 101 nginx && useradd -d /var/lib/nginx -c 'NGINX http server' -M -u 101 -g 101 nginx \
 #	&& usermod -G 100 -a nginx
 
+COPY 	rootfs /
+
 EXPOSE 25 110 143 465 587 993 995 
 
 STOPSIGNAL SIGTERM
