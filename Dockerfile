@@ -6,7 +6,6 @@ ENV POSTFIXVERSION  3.3
 
 WORKDIR /
 
-
 RUN	zypper -n up \
 	&& zypper install -y --no-recommends postfix postfix-mysql ca-certificates shadow gpg2 openssl pcre zlib python3-pip nano iputils \
 	&& zypper clean -a \
